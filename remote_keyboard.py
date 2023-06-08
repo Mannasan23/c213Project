@@ -57,6 +57,7 @@ class MyApp(App):
         try:
             SERVER = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             SERVER.connect((IP_ADDRESS, PORT))
+
             #start_write()
             return True
         except:
